@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-size: 80%;
+    background-repeat:space;
+}
+a{
+    text-decoration: none;
+    color: #242E52;
+    font-weight: 500;
+}
+h1{
+    font-weight: 700;
+    font-size: 58px;
+    color: #232C50;
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    color: #232851;
+}
+h3{
+    font-weight: 500;
+    font-size: 16.56px;
+    color: black;
+}
+button{
+    background: #F3603B;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5ms;
+    cursor: pointer;
+}
+button a{
+    color: white;
+}
+button:hover{
+    background-color: #f18d74;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 165px;
+}
+header i img{
+    cursor: pointer;
+}
+header i.hLogo {
+    display: none;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    color: #242E52;
+}
+header nav ul li{
+    margin-right: 28px;
+    font-weight: 500;
+    font-size: 13px;
+}
+header nav ul li a:hover{
+    color:#8d919b;
+}
+main section{
+    display: flex;
+}
+main section.home{
+    justify-content:space-evenly;
+    align-items: center;
+}
+main section.home article{
+    margin: 175px 5px 167px 165px;
+}
+main section.home article h3{
+    margin: 28px 0px 28px 0px;
+}
+main section.home i{
+    margin: 104px 146px 112px 65px;
+}
+main section.sobreNos article{
+    margin: 0px 62.5px 0px 165px;
+}
+main section.sobreNos article h3{
+    margin-top: 36px;
+}
+main section.sobreNos ol{
+    margin: 0px 164px 62px 62.5px;
+}
+main section.sobreNos ol p{
+    margin: 18px 0px 42px 0px;
+}
+main section.sobreNos ol li{
+    font-weight: 700;
+    font-size: 16px;
+    color: #232851;
+    list-style: none;
+}
+main section.sobreNos ol li::before{
+    content: "0"counter(list-item);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3603B;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-right: 23px;
+}
+main section.sobreNos ol p{
+    font-weight: 500;
+    font-size: 16.3px;
+    color: #B3B2B7;
+}
+main h2.wts{
+    text-align: center;
+    padding: 62px 0px 109px 0px;
+}
+main section.testimonios{
+    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section.testimonios button{
+    margin-top: 46px;
+}
+main section.testimonios article{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 62px;
+}
+main section.testimonios article div{
+    background: #FAFAFA;
+    position: relative;
+    text-align: center;
+}
+main section.testimonios article div p{
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    bottom: 30px;
+    padding: 10px;
+}
+main section.testimonios article div img{
+    position: relative;
+    bottom: 75px;
+}
+main section.testimonios article div h4{
+    position: relative;
+    bottom: 50px;
+}
+main section.bottom button.blanco{
+    background: white;
+    color: #F3603B;
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+main section.bottom button.blanco a{
+    color: #F3603B;
+    transition: color 0.5ms;
+}
+main section.bottom button.blanco a:hover{
+    color: #f18d74;    
+}
+main section.bottom{
+    background: #F3613C;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 165px;
+}
+main section.bottom h2{
+    color: white;
+    padding-bottom: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: #1E1E26;
+    padding: 65px 80px;
+}
+footer article i img{
+    padding-left: 14px;
+    cursor: pointer;
+}
+footer article ul.redesSociales{
+    display: flex;
+    padding: 0px;
+}
+footer article ul.redesSociales li{
+    padding: 8px;
+    justify-content: left;
+}
+footer article ul.redesSociales li img{
+    cursor: pointer;
+}
+footer article ul.redesSociales li:hover{
+    color: #F3603B;
+}
+footer article ul{
+    list-style: none;
+}
+footer article ul.redesSociales{
+    display: flex;
+}
+footer article ul.ft_sec1 a,ul.ft_sec2 li a{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+footer section article ul.ft_sec1 a:hover{
+    color: #F3603B;
+}
+footer section article ul.ft_sec2 a:hover{
+    color: #F3603B;
+}
+footer article.cpy{
+    position: relative;
+}
+footer article span{
+    position: absolute;
+    color:#8C8C94;
+    font-weight: 500;
+    font-size: 12.5px;
+    left: 95px;
+    top: 80px;
+}
+footer article form input{
+    border-radius: 50px;
+    padding: 12px 48px 12px 10px;
+    border-style: none;
+}
+footer section{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 400px) {
+
+    body{
+        background-size:inherit;
+        background-repeat:space;
+    }
+    h2{
+        font-size: 1.9em;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    header{
+        justify-content: space-between;
+        padding: 50px 20px 50px 20px;
+    }
+    header nav {
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    header i.hLogo{
+        display: inline-block;
+        margin-bottom: 10px;    
+    }
+    main section.home{
+        flex-wrap: wrap-reverse;
+        margin: 0px;
+        justify-content: center;
+    }
+    main section.home i{
+        width: 100vw;
+        margin: 0px;
+    }
+    main section.home i img{
+        width: 100%;
+        justify-content: center;
+    }
+    main section.home article{
+        margin: 0px 35px 0px 35px;
+        flex-direction: column;
+        display: flex;
+    }
+    main section.home article h1{
+        font-size: 2.3em;
+        font-weight: 700;
+        text-align: center;
+    }
+    main section.home article button{
+        align-self: center;
+    }
+    main section.sobreNos{
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section.sobreNos article{
+        margin: 0px 35px 0px 35px;
+    }
+    main section.sobreNos article h3{
+        margin-bottom: 50px;
+    }
+    main section.sobreNos ol{
+        margin: 0px 0px 0px 25px;
+        padding: 0px;
+    }
+    main section.sobreNos ol li::before{
+        margin-right: 5px;
+    }
+    main section.sobreNos ol li{
+        background-color: rgba(247, 182, 166, 0.3); 
+    }
+    main section.testimonios{
+        margin: 0px;
+    }
+    main section.testimonios div{
+        margin: 0px 20px;
+    }
+    main section.testimonios div.anisha,div.richard{
+        display: none;
+    }
+    main section.testimonios button.comentarios{
+        margin-bottom: 46px;
+    }
+    main section.bottom{
+        padding: 65px 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section.bottom button.blanco{
+        margin-top: 20px;
+    }
+    footer{
+        height: 400px;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    footer article{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer article i{
+        margin-top: 20px;
+    }
+    footer article i img{
+        padding: 0px;
+    }
+    footer article.cpy{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    footer article.cpy span{
+        position: absolute;
+        top: 325px;
+        left: 80px;
+    }
+    footer article.cpy form{
+        align-items: center;
+    } 
+    footer section{
+        margin: 30px 0px;
+        width: 369px;
+    }
+    footer section article ul.ft_sec1,ul.ft_sec2{
+        padding: 0px;
+    }
+    footer section article ul.ft_sec1 li,ul.ft_sec2 li{
+        margin-top: 10px;
+    }
+    footer section article ul.ft_sec2{
+        margin-bottom: 33px;
+    }
+}
